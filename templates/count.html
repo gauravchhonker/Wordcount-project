@@ -1,0 +1,19 @@
+<h1>There are {{ count}} words in your text</h1>
+
+<h2>You have entered....</h2>
+<a href=" {% url 'home' %} "> START AGAIN! </a>
+<br>
+<br>
+
+{{ mytext }}
+
+<h1>WORD COUNT</h1>
+
+{% for word, counttotal in sortwords %}
+
+{{ word }} - {{ counttotal}}
+<br>
+<br>
+
+{% endfor %}
+
